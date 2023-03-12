@@ -1,0 +1,333 @@
+.breakfast {
+  position: relative;
+  height: 760px;
+  overflow: hidden;
+}
+
+.breakfast-bg {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -10;
+  background-size: cover;
+  background-position: center;
+}
+
+.breakfast-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.breakfast-price {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.breakfast-price-title {
+  font-size: 60px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.breakfast-price-text {
+  font-size: 18px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c8a593;
+}
+
+.breakfast-block-item {
+  position: relative;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.breakfast-block-item:first-child {
+  margin-top: 0;
+}
+
+.breakfast-price-subtitle {
+  height: 20px;
+  font-size: 30px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.breakfast-price-subtext {
+  font-size: 16px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  color: var(--color-grey);
+}
+
+.price-item {
+  font-size: 36px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-gold);
+}
+
+.price-item-decoration {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 27px;
+  justify-content: center;
+}
+
+.price-item-decoration img:first-child {
+  position: absolute;
+  left: 5px;
+}
+
+.price-item-decoration img:last-child {
+  position: absolute;
+  right: 5px;
+}
+
+.breakfast-menu {
+  position: relative;
+  width: 440px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.breakfast-menu::before {
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 35px solid var(--color-white);
+  border-left: 35px solid transparent;
+}
+
+.breakfast-menu-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url('../images/img/breakfast-menu/breackfast-menu-1.png') no-repeat center;
+}
+
+.breakfast-menu-bg::before {
+  content: "";
+  width: 93%;
+  height: 95%;
+  position: absolute;
+  border: 2px dashed var(--color-grey);
+}
+
+.header-menu-text {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.header-menu-text-item {
+  font-size: 14px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.header-menu-logo {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header-menu-logo::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 31px;
+  width: 12px;
+  height: 12px;
+  background-color: #f3f1e9;
+  border: 1px solid var(--color-grey);
+  border-radius: 100px;
+}
+
+.header-menu-logo::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 31px;
+  width: 12px;
+  height: 12px;
+  background-color: #f3f1e9;
+  border: 1px solid var(--color-grey);
+  border-radius: 100px;
+}
+
+.header-menu-logo-img-item {
+  border: 1px solid var(--color-grey);
+  border-radius: 100px;
+  padding: 10px;
+  background-color: #f3f1e9;
+  width: 60px;
+  height: 60px;
+}
+
+.header-menu-logo-decoration {
+  position: absolute;
+  z-index: -1;
+  width: 350px;
+  top: 20px;
+  border: .2px solid var(--color-grey);
+}
+
+.block-menu-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.block-menu-info-title {
+  font-size: 44px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  color: var(--color-brown);
+  margin-top: 10px;
+}
+
+.block-menu-info-text {
+  width: 330px;
+  font-size: 14px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-brown);
+  margin-top: 45px;
+}
+
+.block-menu-info-btn {
+  font-size: 18px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-brown-light);
+  padding: 14px 70px;
+  background-color: transparent;
+  border: 1px solid var(--color-brown-light);
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.block-menu-info-btn:hover {
+  background-color: var(--color-grey);
+  border: none;
+}
+
+.breakfast-bg-item {
+  width: 346px;
+  height: 204px;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  background: url('../images/icons/breakfast/breakfast-icon-1.png') no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 1400px) {
+  .breakfast-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .breakfast {
+    height: 100%;
+  }
+
+  .breakfast-bg {
+    height: 100%;
+  }
+
+  .breakfast-section {
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breakfast-price {
+    margin-bottom: 40px;
+  }
+
+  .breakfast-price-subtext {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .breakfast-price {
+    width: 100%;
+  }
+
+  .breakfast-price-text {
+    text-align: center;
+  }
+
+  .breakfast-menu {
+    width: 80vw;
+    height: 540px;
+  }
+
+  .breakfast-menu::before {
+    display: none;
+  }
+
+  .header-menu-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .breakfast-menu {
+    height: 500px;
+  }
+
+  .header-menu-text {
+    justify-content: space-around;
+  }
+
+  .block-menu-info-title {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 0 15px;
+  }
+
+  .block-menu-info-text {
+    width: 100%;
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+	--color-white: #ffffff;
+	--color-brown: #56534c;
+	--color-brown-light: #a47d5e;
+	--color-gold: #c9b176;
+	--color-grey: #c2beba;
+	--color-black: #35332f;
+}
+
+/* fonts style
+
+Alegreya - Regular 400 - Bold 700
+Pinyon Script - Regular 400 || [Scriptina]
+Playfair Display - Bold 700 
+Prompt - Light 300 - Regular 400 || [ProximaNova]
+
+
+font-family: 'Alegreya Sans',sans-serif;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'WindSong',cursive;
+
+
+*/
+
+body {
+	margin: 0;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
