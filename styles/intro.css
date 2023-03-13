@@ -74,17 +74,7 @@
 	}
 }
 
-@media (max-width: 750px) {
-	.intro {
-		height: 1300px;
-	}
-}
-
 @media (max-width: 400px) {
-	.intro {
-		height: 1500px;
-	}
-
 	.intro__title {
 		margin-top: 80px;
 	}
